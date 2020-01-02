@@ -5,10 +5,11 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use GetCandy\Api\Core\Traits\HasCandy;
 
 class User extends Authenticatable
 {
-    use Notifiable;
+    use Notifiable, HasCandy;
 
     /**
      * The attributes that are mass assignable.
