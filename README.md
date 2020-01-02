@@ -15,9 +15,9 @@
     </a>
 </p>
 
-## Setup Laravel with Docker 
+## Setup Laravel with Docker ([Document](https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose))
 
-[Document](https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose).
+
 
 ### Clone Laravel project & install composer
 
@@ -268,9 +268,6 @@ EXIT;
  php artisan migrate
 ```
 
-## Setup GetCandy 0.2
+## Setup GetCandy 0.2 ([Document](https://getcandy.io/docs/master/guides/introduction/01-installation#api_install))
 
-[Document](https://getcandy.io/docs/master/guides/introduction/01-installation#api_install).
-
-## Run Project
-[](http://localhost:8083)
+## Run Project ([http://localhost:8083](http://localhost:8083))
