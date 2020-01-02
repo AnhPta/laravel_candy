@@ -15,13 +15,13 @@
     </a>
 </p>
 
-## Setup
-    https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose
+## Setup (https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose)
+    
 ```
-    $ git clone https://github.com/laravel/laravel.git laravel-app
-    $ cd ~/laravel-app
-    $ docker run --rm -v $(pwd):/app composer install
-    $ sudo chown -R $USER:$USER ~/Sites/laravel-app
+git clone https://github.com/laravel/laravel.git laravel-app
+cd ~/laravel-app
+docker run --rm -v $(pwd):/app composer install
+sudo chown -R $USER:$USER ~/Sites/laravel-app
 ```
 
 ## docker-compose.yml
@@ -149,13 +149,13 @@ CMD ["php-fpm"]
 
 ```
 
-## /laravel-app/php/local.ini
+## laravel-app/php/local.ini
 ```
 upload_max_filesize=40M
 post_max_size=40M
 ```
 
-## /laravel-app/nginx/conf.d/app.conf
+## laravel-app/nginx/conf.d/app.conf
 ```
 server {
     listen 80;
@@ -179,7 +179,7 @@ server {
 }
 ```
 
-## /laravel-app/mysql/my.cnf
+## laravel-app/mysql/my.cnf
 ```
 [mysqld]
 general_log = 1
@@ -237,7 +237,7 @@ MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 
 ```
 
-## Build
+## Build docker
 ```
 cp .env.example .env
 docker-compose up -d
