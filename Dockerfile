@@ -8,6 +8,7 @@ WORKDIR /var/www
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
+    nodejs \
     build-essential \
     default-mysql-client \
     libpng-dev \
