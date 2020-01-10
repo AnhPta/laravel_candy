@@ -4,7 +4,7 @@ return [
     /*
      * List which roles have access to the hub
      */
-    'hub_access' => ['editor'],
+    'hub_access' => ['admin'],
 
     /*
      * Define whether to use internal requests

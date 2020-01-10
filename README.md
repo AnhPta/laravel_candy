@@ -86,6 +86,18 @@ services:
     networks:
       - app-network
 
+  node:
+    image: "node:8"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./web:/home/node/app
+    expose:
+      - "8081"
+    command: bash -c "npm install"
+
 #Docker Networks
 networks:
   app-network:
@@ -110,6 +122,7 @@ WORKDIR /var/www
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
+    nodejs \
     build-essential \
     default-mysql-client \
     libpng-dev \
